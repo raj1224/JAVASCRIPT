@@ -1,9 +1,9 @@
 const name = "hitesh"
 const repoCount = 50
 
-// console.log(name + repoCount + " Value");
+// console.log(name + repoCount + " Value"); //old way of concatenation 
 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); // template literals new way of concatenation
 
 const gameName = new String('hitesh-hc-com')
 
@@ -20,7 +20,7 @@ const newString = gameName.substring(0, 4)
 console.log(newString);
 
 const anotherString = gameName.slice(-8, 4)
-console.log(anotherString);
+console.log(anotherString); //output will be empty because start index is greater than end index
 
 const newStringOne = "   hitesh    "
 console.log(newStringOne);

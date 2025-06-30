@@ -19,7 +19,7 @@ let state;
 // string => ""
 // boolean => true/false
 // null => standalone value
-// undefined => VALUE is not assigned
+// undefined => 
 // symbol => unique
 
 
@@ -27,9 +27,3 @@ let state;
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
-
-
-// DOCUMENTATION:-TSC OR MDN
-
-// HOMEWORK
-// 1. Read specification in tsc documentation.
