@@ -1,5 +1,7 @@
-// singleton
-// Object.create
+// singleton :-  when we create an object with constructor 
+// and if we create with literal, then it is not singleton
+
+// Object.create // Object constructor
 
 // object literals
 
@@ -9,7 +11,7 @@ const mySym = Symbol("key1")
 const JsUser = {
     name: "Hitesh",
     "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
+    [mySym]: "mykey1", // correct way to use symbol as key
     age: 18,
     location: "Jaipur",
     email: "hitesh@google.com",
@@ -17,8 +19,8 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
+// console.log(JsUser.email) //wrong way to access
+// console.log(JsUser["email"]) // correct way to access
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 

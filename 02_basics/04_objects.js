@@ -1,5 +1,5 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// const tinderUser = new Object() // signleton object
+const tinderUser = {} // object literal
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -18,6 +18,7 @@ const regularUser = {
 }
 
 // console.log(regularUser.fullname.userfullname.firstname);
+// console.log(regularUser.fullname?.userfullname.firstname); // optional chaining
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -48,13 +49,14 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser)); // returns keys of the object as array
 // console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser)); // returns key value pair as array of arrays 
+// //output: [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
-
+// DESTRUCTURING OBJECTS
 const course = {
     coursename: "js in hindi",
     price: "999",
@@ -63,11 +65,20 @@ const course = {
 
 // course.courseInstructor
 
+const {courseInstructor} = course
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
 console.log(instructor);
 
+// IN REACT, WE USE DESTRUCTURING A LOT
+const navbar=({company})=>{
+
+}
+navbar(company='hitesh')
+
+
+// JSON - JavaScript Object Notation
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
