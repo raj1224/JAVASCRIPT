@@ -12,9 +12,12 @@ for (const num of arr) {
 const greetings = "Hello world!"
 for (const greet of greetings) {
     //console.log(`Each char is ${greet}`)
-}
+} // output: H e l l o   w o r l d !
 
 // Maps
+// Map is a collection of key-value pairs
+// duplicate keys are not allowed
+// order of insertion is maintained
 
 const map = new Map()
 map.set('IN', "India")
@@ -28,6 +31,9 @@ map.set('IN', "India")
 for (const [key, value] of map) {
     // console.log(key, ':-', value);
 }
+for (const key of map) {
+    // console.log(key); // output: [ 'IN', 'India' ] [ 'USA', 'United States of America' ] [ 'Fr', 'France' ]
+}
 
 const myObject = {
     game1: 'NFS',
@@ -35,6 +41,6 @@ const myObject = {
 }
 
 // for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
+//     console.log(key, ':-', value); // output: TypeError: myObject is not iterable
     
 // }

@@ -11,3 +11,5 @@
     console.log(`DB CONNECTED TWO ${name}`);
 } )('hitesh')
 
+// how to write 2 iifee in one file?
+// we need to add a semicolon before the second IIFE to avoid syntax errors.

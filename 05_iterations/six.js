@@ -6,13 +6,19 @@
 //     return item
 // } )
 
-// console.log(values);
+// console.log(values); // undefined
+// foreach function does not return anything, it just iterates over the array and performs an action on each element.
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
-// } )
+// } ) // arrow function with explicit return
+// const newNums = myNums.filter( (num) => 
+//     num > 4
+// ) // arrow function with implicit return
+
+// filter function returns a new array with all elements that pass the test implemented by the provided function.
 
 // const newNums = []
 
@@ -22,7 +28,7 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //     }
 // } )
 
-// console.log(newNums);
+// console.log(newNums); ouytput: [5, 6, 7, 8, 9, 10]
 
 
 const books = [
@@ -37,9 +43,9 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-  let userBooks = books.filter( (bk) => bk.genre === 'History')
+  let userBooks = books.filter( (bk) => bk.genre === 'History') // output: [{ title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 }, { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 }]
 
   userBooks = books.filter( (bk) => { 
-    return bk.publish >= 1995 && bk.genre === "History"
+    return bk.publish >= 1995 && bk.genre === "History" // output: [{ title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 }]
 })
   console.log(userBooks);

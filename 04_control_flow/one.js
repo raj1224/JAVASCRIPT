@@ -1,3 +1,6 @@
+// how js code works behind the scenes 
+
+
 // if
 const isUserloggedIn = true
 const temperature = 41
@@ -23,7 +26,7 @@ const temperature = 41
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test"),console.log("test2"); // implicit return code
 
 // if (balance < 500) {
 //     console.log("less than 500");

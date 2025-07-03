@@ -1,5 +1,6 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
+// callbacks functions me name nahi hota h
 // coding.forEach( function (val){
 //     console.log(val);
 // } )
@@ -15,7 +16,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 // coding.forEach(printMe)
 
 // coding.forEach( (item, index, arr)=> {
-//     console.log(item, index, arr);
+//     console.log(item, index, arr); // output: item, index, array
 // } )
 
 const myCoding = [

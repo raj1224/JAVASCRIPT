@@ -7,12 +7,12 @@ const myObject = {
 
 for (const key in myObject) {
     //console.log(`${key} shortcut is for ${myObject[key]}`);
-}
+} // output: js shortcut is for javascript, cpp shortcut is for C++, rb shortcut is for ruby, swift shortcut is for swift by apple
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
 for (const key in programming) {
-    //console.log(programming[key]);
+    //console.log(programming[key]); // output: js, rb, py, java, cpp
 }
 
 // const map = new Map()
@@ -22,5 +22,5 @@ for (const key in programming) {
 // map.set('IN', "India")
 
 // for (const key in map) {
-//     console.log(key);
+//     console.log(key); // output: keys are not iterable in Map, so this will not work
 // }
