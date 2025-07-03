@@ -11,6 +11,12 @@
         }
     </style>
 </head>
+
+window->document->html->(head and body)
+head ->title->text node and (meta->attribut)
+body->div(attribute)->(h1->attribute and textnode) and (p->textnode)
+
+
 <body class="bg-black">
     <div >
         <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
@@ -27,5 +33,40 @@
             <li class="list-item">four</li>
         </ul>
     </div>
+    <script>
+        console.log(document.getElementById("title").id); //output: title
+        console.log(document.getElementById("title").className); //output: heading
+        console.log(document.getElementById("title").class); //output: undefined
+
+        // get attribute
+        console.log(document.getElementById("title").getAttribute("id")); //output: title
+
+        // set attribute
+        document.getElementById("title").setAttribute("id", "new-title");
+
+        // innertext
+        console.log(document.getElementById("title").innerText); //output: DOM learning on Chai aur code test text
+        console.log(document.getElementById("title").textContent); //output: DOM learning on Chai aur code test text
+        console.log(document.getElementById("title").innerHTML); //output: DOM learning on Chai aur code <span style="display: none;">test text</span>
+
+        //  get elements by class name
+        console.log(document.getElementsByClassName("list-item")); //output: HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+        // getelement by id 
+        console.log(document.getElementById("title")); //output: <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        // get elements by tag name
+        console.log(document.getElementsByTagName("h2")); //output: HTMLCollection(3) [h2, h2, h2]
+        // get elements by name
+        console.log(document.getElementsByName("")); //output: NodeList(0) []
+        // query selector
+        console.log(document.querySelector(".list-item")); //output: <li class="list-item">one</li>
+        console.log(document.querySelectorAll(".list-item")); //output: NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+        console.log(document.querySelector("#title")); //output: <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        console.log(document.querySelectorAll("h2")); //output: NodeList(3) [h2, h2, h2]
+
+        document.querySelectorAll("input[type='password']"); //output: NodeList(1) [input#]
+        document.querySelectorAll("p:first-child"); //output: NodeList(0) []
+
+        
+    </script>
 </body>
 </html>
