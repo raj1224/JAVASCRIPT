@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-color changer</title>
+</head>
+<body>
+    <button id="blue" class="button" style="padding: 2px; color: white; background-color: rgb(8, 171, 235);">change color</button>
+    <button id="green" class="button" style="padding: 2px; color: white; background-color: green;">change color</button>
+    <button id="yellow" class="button" style="padding: 2px; color: white; background-color: yellow;">change color</button>
+    <button id="red" class="button" style="padding: 2px; color: white; background-color: red;">change color</button>
+</body>
+<script>
+    let buttons = document.querySelectorAll('.button');
+    let body= document.querySelector('body');
+
+    buttons.forEach((button) =>{
+        button.addEventListener('click', (e) => {
+            let color =e.target.id
+            console.log(color);
+            switch(color) {
+                case 'blue':
+                    body.style.backgroundColor = 'blue';
+                    break;
+                case 'green':
+                    body.style.backgroundColor = 'green';
+                    break;
+                case 'yellow':
+                    body.style.backgroundColor = 'yellow';
+                    break;
+                case 'red':
+                    body.style.backgroundColor = 'red';
+                    break;
+                default:
+                    body.style.backgroundColor = 'white';
+            }
+            
+
+        });
+    })
+
+
+</script>
+</html>
