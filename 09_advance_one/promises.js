@@ -23,7 +23,8 @@ new Promise(function(resolve, reject){
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
-        resolve({username: "Chai", email: "chai@example.com"})
+        resolve({username: "Chai", email: "chai@example.com"}) // resolve with an object
+        // reject('ERROR: Something went wrong') // uncomment to see the error handling
     }, 1000)
 })
 
@@ -100,3 +101,4 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 
 // promise.all
 // yes this is also available, kuch reading aap b kro.
+
