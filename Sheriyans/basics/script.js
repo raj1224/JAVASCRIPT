@@ -127,3 +127,4 @@ console.log(a);
 
 
 var a = 10; // this is fine, as var is hoisted
+// just checking
